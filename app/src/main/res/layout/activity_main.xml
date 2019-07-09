@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/upper_half_login">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/logo_promorph"
+                android:background="@drawable/circle_logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/round_rect"
+        android:layout_margin="20dp"
+        android:id="@+id/l1"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:text="abhishek.empoweru@gmail.com"
+                android:id="@+id/username"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/key"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_weight="2"
+                android:text="ab7054035006"
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/open_eye"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/closed"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:gravity="center">
+        <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/l1"
+        android:gravity="center"
+        android:id="@+id/login"
+        android:elevation="50dp"
+            android:textColor="#fff"
+        android:layout_gravity="center"
+        android:background="@drawable/login_dashboard"
+        android:text="Sign in " />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Visit us at :"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="90dp"
+            android:src="@drawable/fb_logo"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/linked_in_logo"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
